@@ -1,2 +1,2 @@
 ﻿  1lab.cpp
-  1lab.vcxproj -> C:\Users\ivano\source\repos\1lab\Debug\1lab.exe
+C:\Users\ivano\Desktop\Programming\Practice\01\C++\lab1(1)\1lab\1lab.cpp(5,12): error C2065: LC_RUS: необъявленный идентификатор
