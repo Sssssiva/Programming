@@ -1,6 +1,2 @@
 ﻿  19.cpp
-C:\Users\ivano\Desktop\Programming\Practice\19\C++\19\19\19.cpp(11,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\ivano\Desktop\Programming\Practice\19\C++\19\19\19.cpp(29,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\ivano\Desktop\Programming\Practice\19\C++\19\19\19.cpp(42,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\ivano\Desktop\Programming\Practice\19\C++\19\19\19.cpp(69,23): warning C4018: <: несоответствие типов со знаком и без знака
   19.vcxproj -> C:\Users\ivano\Desktop\Programming\Practice\19\C++\19\Debug\19.exe
