@@ -2,116 +2,131 @@
 #include<vector>
 #include<ctime>
 #include<cmath>
-
-std::vector<int> BozoSort(std::vector<int>a, bool check = true) {
-	bool sorted = false;
-	while (!sorted) {
-		int x1 = rand() % a.size();
-		int x2 = rand() % a.size();
-
-		int swap = a[x1];
-		a[x1] = a[x2];
-		a[x2] = swap;
-
-		sorted = true;
-		if (check) {
-			for (int i = 1; i < a.size(); i++) {
-				if (a[i - 1] > a[i]) {
-					sorted = false;
-					break;
-				}
-			}
-		}
-		else {
-			for (int i = 1; i < a.size(); i++) {
-				if (a[i - 1] < a[i]) {
-					sorted = false;
-					break;
-				}
-			}
-		}
-	}
-
-	return a;
-}
-
-std::vector<int> BozoSort(std::vector < std::vector < int>>a, bool check = true) {
-	std::vector<int>help;
-	for (int i = 0; i < a.size(); i++) {
-		for (int j = 0; j < a.size(); j++) {
-			help.push_back(a[i][j]);
-		}
-	}
-	return BozoSort(help, check);
-};
-
-std::vector<int> BozoSort(int first, int second, int third, bool check = true) {
-	std::vector<int>three;
-	three.push_back(first);
-	three.push_back(second);
-	three.push_back(third);
-	return BozoSort(three, check);
-}
-
-int main() {
+using namespace std;
+/*int random(int gata) {
 	srand(time(0));
-	std::vector <int> a;
-	std::vector <int> temp;
-	int n;
-	std::cin >> n;
+	return rand() % gata;
+}*/
 
-	int x;
-	for (int i = 0; i < n; i++) {
-		std::cin >> x;
-		a.push_back(x);
-	}
-	temp = BozoSort(a);
-	std::cout << std::endl;
-	for (int i = 0; i < temp.size(); i++) {
-		std::cout << temp[i] << " ";
-	}
-	std::cout << std::endl;
-	bool check;
-	temp = BozoSort(a, check = false);
-	for (int i = 0; i < temp.size(); i++) {
-		std::cout << temp[i] << " ";
-	}
+vector<int>Bozosort(vector<int>Data,bool sign=true){
+	bool ch = false;
 	
-	std::vector<std::vector<int>> a2;
-	int remember = 0;
-	for (int i = 0; i < sqrt(n); i++) {
-		std::vector<int> temp1;
-		for (int j = 0; j < sqrt(n); j++) {
-			temp1.push_back(a[remember]);
-			remember++;
+	while (!ch) {
+		int i1 = rand() % Data.size();
+		int i2 = rand() % Data.size();
+		int sw = Data[i1];
+		Data[i1] = Data[i2];
+		Data[i2] = sw;
+		ch = true;
+		if (!sign) {
+			for (int i = 1; i < Data.size(); i++) {
+				if (Data[i - 1] < Data[i]) {
+					ch = false;
+					break;
+				}
+			}
 		}
-		a2.push_back(temp1);
-		if (remember > n) {
+
+		else {
+			for (int i = 1; i < Data.size(); i++) {
+				if (Data[i - 1] > Data[i]) {
+					ch = false;
+					break;
+				}
+			}
+		}
+	}
+		return Data;
+	
+}
+vector <int>Bozosort(vector<vector<int> > Data, bool sign = true) {
+	vector<int>Two;
+	for (int i = 0; i < Data.size(); i++) {
+		for (int j = 0; j < Data.size(); j++) {
+			Two.push_back(Data[i][j]);
+		}
+	}
+	if (sign) {
+		return Bozosort(Two);
+	}
+	if(!sign) {
+		return Bozosort(Two, false);
+	}
+}
+vector <int>Bozosort(int one, int two, int three, bool signe = true) {
+	bool gg = false;
+	vector <int>func(3);
+	func[0] = one;
+	func[1] = two;
+	func[2] = three;
+	if (!signe) {
+		return Bozosort(func, false);
+	}
+	else {
+		return Bozosort(func);
+	}
+}
+int main(){
+	srand(time(0));
+//кол-во чисел
+	int n;
+//Ввод кол-ва чисел
+	cin >> n;
+//вектор для первой функции
+	vector<int>Data(n);
+//заполнение первого вектора
+	for (int i = 0; i < n; i++) {
+		cin >> Data[i];
+	}
+//вывод первой функции
+	vector<int>output(Data.size());
+	output=Bozosort(Data);
+//при тру
+	for (int i = 0; i < Data.size(); i++) {
+		cout << output[i];
+	}
+	cout << endl;
+	output=Bozosort(Data, false);
+// при фолс
+	for (int i = 0; i < Data.size(); i++) {
+		cout << output[i];
+	}
+	cout << endl;
+	int info = 0;
+	vector<vector<int>>Dataa;
+	for (int i = 0; i < sqrt(n); i++) {
+		std::vector<int> massive;
+		for (int i = 0; i < sqrt(n); i++) {
+			massive.push_back(Data[info]);
+			info++;
+		}
+		Dataa.push_back(massive);
+		if (info > n) {
 			break;
 		}
 	}
-	temp = BozoSort(a2);
-	std::cout << std::endl;
-	for (int i = 0; i < temp.size(); i++) {
-		std::cout << temp[i] << " ";
+	output = Bozosort(Dataa);
+	for(int i=0;i<n;i++){
+		cout << output[i];
 	}
-	temp = BozoSort(a2, check = false);
-	std::cout << std::endl;
-	for (int i = 0; i < temp.size(); i++) {
-		std::cout << temp[i] << " ";
+	cout << endl;
+	output = Bozosort(Dataa, false);
+	for (int i = 0; i < n; i++) {
+		cout << output[i];
 	}
-
-	int first = a[0], second = a[1], third = a[2];
-
-	temp = BozoSort(first, second, third);
-	std::cout << std::endl;
-	for (int i = 0; i < temp.size(); i++) {
-		std::cout << temp[i] << " ";
+	cout << endl;
+	int one = Data[0];
+	int two = Data[1];
+	int three = Data[2];
+	vector<int>output2(3);
+	output2=Bozosort(one, two, three);
+	for (int i = 0; i < 3; i++) {
+		cout << output2[i];
 	}
-
-	temp = BozoSort(first, second, third, check = false);
-	std::cout << std::endl;
-	for (int i = 0; i < temp.size(); i++) {
-		std::cout << temp[i] << " ";
+	cout << endl;
+	output2 = Bozosort(one, two, three,false);
+	for (int i = 0; i < 3; i++) {
+		cout << output2[i];
 	}
+	cout << endl;
 }
