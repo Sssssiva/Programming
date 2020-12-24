@@ -16,6 +16,7 @@ bool baal = false;
 void cli() {
 	ifstream fil("weather.html");
 	getline(fil, ht, '\0');
+	fil.close();
 	Client cli("http://api.openweathermap.org");
 	auto data = cli.Get("/data/2.5/onecall?lat=44.948237&lon=34.100318&exclude=current,minutely,daily,alerts&units=metric&lang=ru&APPID=842fc3a1dc489d72adfd0262976857ba");
 
@@ -64,15 +65,16 @@ void cli() {
 void gen_response(const Request& req, Response& response) {
 	cli();
 	string html = ht;
+	string copyhtml = html;
 	std::string str2 = "{hourly[i].weather[0].description}";
 	std::string str3 = "{hourly[i].weather[0].icon}";
 	std::string str4 = "{hourly[i].temp}";
-	html.replace(html.find(str2), str2.length(), memory["weather"][0]["description"]);
-	html.replace(html.find(str3), str3.length(), memory["weather"][0]["icon"]);
-	html.replace(html.find(str4), str4.length(), to_string(int(memory["temp"].get<double>())));
-	html.replace(html.find(str4), str4.length(), to_string(int(memory["temp"].get<double>())));
+	copyhtml.replace(copyhtml.find(str2), str2.length(), memory["weather"][0]["description"]);
+	copyhtml.replace(copyhtml.find(str3), str3.length(), memory["weather"][0]["icon"]);
+	copyhtml.replace(copyhtml.find(str4), str4.length(), to_string(int(memory["temp"].get<double>())));
+	copyhtml.replace(copyhtml.find(str4), str4.length(), to_string(int(memory["temp"].get<double>())));
 
-		response.set_content(html, "text/html");
+		response.set_content(copyhtml, "text/html");
 
 	
 }
@@ -80,6 +82,7 @@ void gen_response(const Request& req, Response& response) {
 void raw(const Request& req, Response& response) {
 	ifstream fil("weather.html");
 	getline(fil, ht, '\0');
+	fil.close();
 	Client cli("http://api.openweathermap.org");
 	auto data = cli.Get("/data/2.5/onecall?lat=44.948237&lon=34.100318&exclude=current,minutely,daily,alerts&units=metric&lang=ru&APPID=842fc3a1dc489d72adfd0262976857ba");
 
