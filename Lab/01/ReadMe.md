@@ -43,7 +43,8 @@
 3)Составляем запрос на получение времени в формате json, без регистрации на сайте ```http://worldtimeapi.org/pages/schema```. У нас получается вот такое запрос: ```http://worldtimeapi.org/api/timezone/Europe/Simferopol```
 4)Исходный код созданного мною серверного приложения на с++
 
-```#include <iostream>
+```C++
+#include <iostream>
 #include <nlohmann/json.h>
 #include<iomanip>
 #include<fstream>
@@ -187,7 +188,8 @@ int main(){
 }```
 
 5) Исходный код созданного мною клиентского приложения на Python
-```from tkinter import *
+```Python
+from tkinter import *
 import json
 from tkinter.font import BOLD
 import requests
