@@ -9,7 +9,7 @@ def cli(event=None):
 		forecast_j = json.loads(response)
 
 		d.config(text=str(forecast_j["d"]))
-		temperature.config(text=str(round(forecast_j["t"])) + "°C")
+		temperature.config(text=str(int(forecast_j["t"])) + "°C")
 	except requests.exceptions.ConnectionError:
 		pass
 
