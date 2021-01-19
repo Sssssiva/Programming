@@ -1,46 +1,119 @@
 ﻿#include <iostream>
-#include <map>
-#include <stdexcept>
 #include <string>
 #include <vector>
-#include <cstdlib>
-#include <ctime>
-using namespace std;
-struct Student
-{
-    std::map<std::string, int> m_exams;
-    std::string m_name;
-    int m_group;
+#include<iomanip>
+#include<ctime>
+int max_symbols = 0;
+struct student {
+	std::string name;
+	int group;
+	struct object {
+		int mathematics;
+		int physics;
+		int history;
+		int programming;
+	}exams;
 
-    Student(std::string name, int group,
-        int math, int phys, int hist, int prog) {
-        using std::to_string;
-        if (group < 1 or group > 9)
-            throw std::invalid_argument("Invalid group. Got " + to_string(group));
-        if (math < 0 or math > 9 or phys < 0 or phys > 9 or hist < 0 or hist > 9
-            or prog < 0 or prog > 9)
-            throw std::invalid_argument("Invalid notes. Got " +
-                to_string(math) + ", " + to_string(phys) + ", " + to_string(hist)
-                + ", " + to_string(prog));
-
-        m_exams = { {"math", math}, {"phys", phys}, {"hist", hist}, {"prog", prog} };
-        m_name = name;
-        m_group = group;
-    }
 };
-int main()
-{
-    srand(time(0));
-    vector<Student> students = {
-    Student("Alexander",1, 4, 3, 2, 5),
-    Student("Oleg",     1, 4, 3, 3, 3),
-    Student("Sergey",   1, 4, 5, 2, 5),
-    Student("Vladimyr", 1, 4, 3, 4, 2),
-    Student("Girey",    1, 4, 2, 3, 5),
-    Student("Alina",    2, 5, 3, 4, 4),
-    Student("Kate",     2, 3, 5, 3, 4),
-    Student("Osman",    2, 5, 4, 3, 4),
-    Student("Amina",    2, 2, 4, 4, 5),
-    Student("Lavr",     2, 2, 2, 4, 5),
-    };
+int max(std::vector<student>losers){
+	int max_symbols = 0;
+	for (int i = 0; i < losers.size(); i++) {
+		if (max_symbols < losers[i].name.size()) {
+			max_symbols = losers[i].name.size();
+		}
+
+	}
+	return max_symbols;
+}
+bool operator<(student a, student b) {
+	return a.name < b.name;
+}
+std::ostream& operator<<(std::ostream& out, student temp) {
+	out << "|" << std::left << std::setw(10) << temp.name << "|"
+		<<std::setw(7)<< temp.group << "|"
+		<< std::setw(6) << temp.exams.mathematics << "|"
+		<< std::setw(6) << temp.exams.physics << "|"
+		<< std::setw(6) << temp.exams.history << "|"
+		<< std::setw(6) << temp.exams.programming << "|";	
+	return out;
+}
+
+
+std::vector<student>Bozosort(std::vector<student>Data) {
+	bool ch = false;
+
+	while (!ch) {
+		int i1 = rand() % Data.size();
+		int i2 = rand() % Data.size();
+		student sw = Data[i1];
+		Data[i1] = Data[i2];
+		Data[i2] = sw;
+		ch = true;
+		for (int i = 1; i < Data.size(); i++) {
+			if (Data[i] < Data[i-1]) {
+				ch = false;
+				break;
+			}
+			
+		}
+	}
+	return Data;
+}
+
+int main() {
+	std::vector<student> list,losers;
+	student A{ "Ivanov A", 202, {5, 5, 5, 5} };
+	list.push_back(A);
+	A = { "Gabrian G", 201, {4, 5, 2, 5} };
+	list.push_back(A);
+	A = { "Jafro K", 202, {5, 3, 4, 3} };
+	list.push_back(A);
+	A = { "Ebro I", 202, {4, 5, 5, 5} };
+	list.push_back(A);
+	A = { "Demiht E", 201, {2, 4, 2, 4} };
+	list.push_back(A);
+	A = { "Zaycev W", 201, {3, 3, 3, 3} };
+	list.push_back(A);
+	A = { "Burganov F", 201, {2, 5, 5, 5} };
+	list.push_back(A);
+	A = { "Sayd T", 202, {3, 3, 3, 3} };
+	list.push_back(A);
+	A = { "Aleym C", 202, {3, 3, 4, 3} };
+	list.push_back(A);
+	A = { "Andreev S", 202, {5, 5, 5, 5} };
+	list.push_back(A);
+	for (int i = 0; i< list.size(); i++) {
+		if ((list[i].exams.history == 2) or (list[i].exams.mathematics == 2) or (list[i].exams.physics == 2) or (list[i].exams.programming == 2)) {
+			losers.push_back(list[i]);
+		}
+
+	}
+	if (losers.size()) {
+		max_symbols = max(losers);
+		losers = Bozosort(losers);
+		std::cout << "+----------+-------+------+------+------+------+" << std::endl;
+		std::cout << "|  Name    | Group | Math | Phys | Hist | Prog |";
+		std::cout << std::endl << "+----------+-------+------+------+------+------+" << std::endl;
+		for (student data : losers) {
+			std::cout << data;
+			std::cout << std::endl << "+----------+-------+------+------+------+------+" << std::endl;
+		}
+		std::cout << std::endl << "Exlucion" << std::endl;
+		srand(time(0));
+		int i1 = rand() % losers.size();
+		std::cout<<std::endl<< "+----------+-------+------+------+------+------+" << std::endl;
+		std::cout << "|  Name    | Group | Math | Phys | Hist | Prog |" << std::endl;
+		std::cout << "+----------+-------+------+------+------+------+" << std::endl;
+		std::cout << losers[i1] << std::endl;
+		std::cout << "+----------+-------+------+------+------+------+" << std::endl;
+
+	}
+	else {
+		std::cout << "Not found";
+	}
+
+
+
+
+
 }
