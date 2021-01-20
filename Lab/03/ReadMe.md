@@ -52,11 +52,11 @@
 
 Приложение выполняем согласно [методичке](https://vladimirchabanov.github.io/lab3.html)
 
-![](C:\Users\ivano\Desktop\Programming\Lab\03\PrtSc)
+![](./PrtSc/zzz.png)
 
 *Рисунок 1. Интерфейс игры*
 
-[Ссылка на исходный код приложения](C:\Users\ivano\Desktop\Programming\Lab\03\zxc.py)
+[Ссылка на исходный код приложения](./zxc.py/main.py)
 
 ## Вывод
 
