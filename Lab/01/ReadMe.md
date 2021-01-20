@@ -50,6 +50,7 @@
 4)Исходный код созданного мною серверного приложения на с++
 
 ```C++
+
 #include <iostream>
 #include <nlohmann/json.h>
 #include<iomanip>
@@ -191,12 +192,15 @@ int main(){
 	std::cout << "Start server..." << std::endl;
 	srv.listen("localhost", 3000);
 	
-}```
+}
+
+```
 
 
 5) Исходный код созданного мною клиентского приложения на Python
 
 ```Python
+
 from tkinter import *
 import json
 from tkinter.font import BOLD
@@ -245,6 +249,7 @@ d.pack(pady=0)
 #Вызов
 cli()
 root.mainloop()
+
 ```
 
 6) Скриншот графического интерфейса клиентского приложения:
