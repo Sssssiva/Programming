@@ -38,7 +38,6 @@ std::istream& operator >> (std::istream& file, vector<Passenger>& passengers) {
         temp = "";
         if (!znach) {
             getline(file, temp, '\r');
-            cin.ignore(temp.size(), '\n');
             znach = true;
         }
         getline(file, temp, ',');
@@ -114,6 +113,30 @@ std::istream& operator >> (std::istream& file, vector<Passenger>& passengers) {
     return file;
 }
 
+void sort(vector<Passenger*>& girls) {
+    for (int i = 0; i < girls.size() - 1; i++) {
+        for (int j = i; j < girls.size(); j++) {
+            if (girls[i]->Age > girls[j]->Age) {
+                swap(*girls[i], *girls[j]);
+            }
+        }
+    }
+}
+
+vector<Passenger*> people(vector<Passenger>& passengers) {
+    vector<Passenger*> girls;
+
+    for (int i = 0; i < passengers.size(); i++) {
+        if (passengers[i].Survived = true and passengers[i].Sex == "female" and passengers[i].Pclass == 1) {
+            girls.push_back(&passengers[i]);
+        }
+    }
+    sort(girls);
+    return girls;
+}
+
+
+
 ostream& operator<< (ostream& ost, vector<Passenger>& passengers) {
     ost << "PassengerId" << " Survived" << "  Pclass\t"<< "\t\tName\t" << "\t\t\t\t\t\t\t\tSex\t" << "Age\t" << "SibSp\t" << "Parch\t" << "Ticket\t" << "Fare\t" << "Cabin\t" << "Embarked";
     ost << endl;
@@ -133,24 +156,7 @@ int main() {
     vector<Passenger> passengers;
     file >> passengers;
     max_znach(passengers);
-    vector<Passenger> girls;
-    for (int i = 0; i < passengers.size(); i++) {
-
-        if (passengers[i].Survived = true and passengers[i].Sex == "female" and passengers[i].Pclass == 1) {
-
-            girls.push_back(passengers[i]);
-        }
-    }
-        for (int i = 0; i < girls.size() - 1; i++) {
-
-            for (int j = i; j < girls.size(); j++) {
-
-                if (girls[i].Age > girls[j].Age) {
-
-                    swap(girls[i], girls[j]);
-                }
-            }
-        }
+    people(passengers);
     ofstream csv;
     csv.open("file.csv");
     csv << passengers;

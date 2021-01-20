@@ -11,9 +11,7 @@ def add_three_defolt_balls():
     global defolt_balls
     bool = True
     while (bool):
-        tile_1 = random.randint(0, 80)
-        tile_2 = random.randint(0, 80)
-        tile_3 = random.randint(0, 80)
+        tile_1,tile_2, tile_3   = random.randint(0, 80), random.randint(0, 80), random.randint(0, 80)
         if (our_lable[tile_1].used == False) and (our_lable[tile_2].used == False) and (
                 our_lable[tile_3].used == False) and (tile_1 != tile_2) and (
                 tile_1 != tile_3) and (tile_2 != tile_3):
