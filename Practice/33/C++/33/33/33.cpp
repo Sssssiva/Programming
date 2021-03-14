@@ -30,9 +30,15 @@ int* sort(int* array, int size) {
 }
 
 int * print(int size, int *array) {
+	cout << "[";
 	for (int i = 0; i < size; i++) {
-		cout << array[i]<<" ";
+		if (i == size - 1) {
+			cout << array[i];
+			break;
+		}
+		cout << array[i]<<",";
 	}
+	cout << "]";
 	return array;
 }
 

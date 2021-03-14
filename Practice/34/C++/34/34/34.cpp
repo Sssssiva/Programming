@@ -10,7 +10,7 @@ void create(int* *a, int size,int first=0,int step=0) {
 		(*a)[i] = count;
 	}
 }
-void destroy(int **a=nullptr){
+void destroy(int **a){
 	if (*a == nullptr) {}
 	else {
 		delete [] *a;
@@ -31,9 +31,16 @@ int* sort(int* a, int size) {
 }
 
 int* print(int* a, int size) {
+	cout << "[";
 	for (int i = 0; i < size; i++) {
-		cout << a[i] << "  ";
+		if (i == size - 1) {
+			cout << a[i];
+			break;
+		}
+		cout << a[i] << ", ";
+	
 	}
+	cout << "]";
 	return a;
 }
 int main()

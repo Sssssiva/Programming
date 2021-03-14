@@ -107,7 +107,7 @@ i = 5
 
 1. Переходим на [gitignore.io](https://www.toptal.com/developers/gitignore) и создаём `.gitignore` файл с следующими тэгами: <p align="center">
 <img src="Scr\z4.png"><br>
-<em>Рисунок 5. Генератор `.gitignore` файла</em>
+<em>Рисунок 3. Генератор `.gitignore` файла</em>
 
 2. Копируем содержимое и добавляем в существующий файл `.gitignore`
 
