@@ -40,7 +40,7 @@
 1. Загружаем установщик QT Community
 
 2. Устанавливаем фреймворк, выбрав последнюю стабильную версию с компилятором MinGW <p align="center">
-<img src="C:\Users\ivano\Desktop\Programming\Lab\04\Scr\Z1.2.png"><br>
+<img src="Scr\Z1.2.png"><br>
 <em>Рисунок 1. Установка QT</em>
 
 3. Чтобы убедиться, что установка прошла успешно, запускаем среду разработки Qt Creator. В разделе "Примеры" находим и выбираем проект Calculator Form Example
@@ -48,7 +48,7 @@
 4. На боковой панели в разделе "Проекты" в каталоге "Формы" открываем главную форму проекта и заменяем текст "Input 1", "Input 2", "Output" на "Ввод 1", "Ввод 2" и "Вывод" соответственно
 
 5. Собираем и запускаем проект <p align="center">
-<img src="C:\Users\ivano\Desktop\Programming\Lab\04\Scr\Z1.png"><br>
+<img src="Scr\Z1.png"><br>
 <em>Рисунок 2. Калькулятор из примера</em>
 
 ### Задание 2. Ответы на вопросы
@@ -106,7 +106,7 @@ i = 5
 ### Задание 4. Добавление параметров в gitignore
 
 1. Переходим на [gitignore.io](https://www.toptal.com/developers/gitignore) и создаём `.gitignore` файл с следующими тэгами: <p align="center">
-<img src="C:\Users\ivano\Desktop\Programming\Lab\04\Scr\z4.png"><br>
+<img src="Scr\z4.png"><br>
 <em>Рисунок 5. Генератор `.gitignore` файла</em>
 
 2. Копируем содержимое и добавляем в существующий файл `.gitignore`
