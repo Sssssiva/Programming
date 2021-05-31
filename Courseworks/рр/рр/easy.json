@@ -1,0 +1,317 @@
+[
+  {
+    "question":"Продолжите: Раз на раз...",
+    "answers": [
+      {
+        "text": "Не меняется",
+        "isCorrect": false
+      },
+      {
+        "text": "Не перемножается",
+        "isCorrect": false
+      },
+      {
+        "text": "Не советуется",
+        "isCorrect": false
+      },
+      {
+        "text": "Не приходится",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Как по-другому называется обойма для патронов?",
+    "answers": [
+      {
+        "text": "Универсам",
+        "isCorrect": false
+      },
+      {
+        "text": "Магистраль",
+        "isCorrect": false
+      },
+      {
+        "text": "Магазин",
+        "isCorrect": true
+      },
+      {
+        "text": "Мини-маркет",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "В каком году произошла Куликовская битва?",
+    "answers": [
+      {
+        "text": "1569",
+        "isCorrect": false
+      },
+      {
+        "text": "1616",
+        "isCorrect": false
+      },
+      {
+        "text": "1773",
+        "isCorrect": false
+      },
+      {
+        "text": "1380",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Шкала Сковилла - это шкала оценки...",
+    "answers": [
+      {
+        "text": "Остроты перца",
+        "isCorrect": true
+      },
+      {
+        "text": "Качества атмосферного воздуха",
+        "isCorrect": false
+      },
+      {
+        "text": "Уровня моря",
+        "isCorrect": false
+      },
+      {
+        "text": "Привлекательности женщин",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Кто носит одинаковые имена?",
+    "answers": [
+      {
+        "text": "Близнецы",
+        "isCorrect": false
+      },
+      {
+        "text": "Друзья",
+        "isCorrect": false
+      },
+      {
+        "text": " Свояки",
+        "isCorrect": false
+      },
+      {
+        "text": "Тёзки",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "С каким листом сравнивают надоедливого человека?",
+    "answers": [
+      {
+        "text": " С банным",
+        "isCorrect": true
+      },
+      {
+        "text": "листом фанеры",
+        "isCorrect": false
+      },
+      {
+        "text": "С кленовым",
+        "isCorrect": false
+      },
+      {
+        "text": "С дубовым",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Чего нет у бедного человека?",
+    "answers": [
+      {
+        "text": "Ни кола ни двора",
+        "isCorrect": true
+      },
+      {
+        "text": "Ни слуху ни духу",
+        "isCorrect": false
+      },
+      {
+        "text": "Ни сучка ни задоринки",
+        "isCorrect": false
+      },
+      {
+        "text": "Ни пуха ни пера",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Как зовут богатыря в русских былинах?",
+    "answers": [
+      {
+        "text": "Лёха Дмитриевич",
+        "isCorrect": false
+      },
+      {
+        "text": "Алёша Попович",
+        "isCorrect": true
+      },
+      {
+        "text": "Алексей Петрович",
+        "isCorrect": false
+      },
+      {
+        "text": "Илья Андреевич",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько спутников у Земли?",
+    "answers": [
+      {
+        "text": "0",
+        "isCorrect": false
+      },
+      {
+        "text": "1",
+        "isCorrect": true
+      },
+      {
+        "text": "2",
+        "isCorrect": false
+      },
+      {
+        "text": "3",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Чем украшает себя цветущая берёза?",
+    "answers": [
+      {
+        "text": "Пирсингом",
+        "isCorrect": false
+      },
+      {
+        "text": "Наколками",
+        "isCorrect": false
+      },
+      {
+        "text": "Браслетами",
+        "isCorrect": false
+      },
+      {
+        "text": "Серёжками",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Что называют десертом?",
+    "answers": [
+      {
+        "text": "Первое",
+        "isCorrect": false
+      },
+      {
+        "text": "Второе",
+        "isCorrect": false
+      },
+      {
+        "text": "Третье",
+        "isCorrect": true
+      },
+      {
+        "text": "Четвёртое",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "На каком топливе ездят трамваи?",
+    "answers": [
+      {
+        "text": "На электричестве",
+        "isCorrect": true
+      },
+      {
+        "text": "На дровах",
+        "isCorrect": false
+      },
+      {
+        "text": "На бензине",
+        "isCorrect": false
+      },
+      {
+        "text": "На растительном масле",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Что, согласно пословице, портит человека?",
+    "answers": [
+      {
+        "text": "Глупость",
+        "isCorrect": false
+      },
+      {
+        "text": "Старость",
+        "isCorrect": false
+      },
+      {
+        "text": "Лень",
+        "isCorrect": true
+      },
+      {
+        "text": "Одежда",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Какого писателя зовут Фёдор Михайлович?",
+    "answers": [
+      {
+        "text": "Достоевский",
+        "isCorrect": true
+      },
+      {
+        "text": "Пушкин",
+        "isCorrect": false
+      },
+      {
+        "text": "Толстой",
+        "isCorrect": false
+      },
+      {
+        "text": "Булгаков",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Что символизирует красный круг на флаге Японии?",
+    "answers": [
+      {
+        "text": "Щит",
+        "isCorrect": false
+      },
+      {
+        "text": "Марс",
+        "isCorrect": false
+      },
+      {
+        "text": "Грязное пятно",
+        "isCorrect": false
+      },
+      {
+        "text": "Солнце",
+        "isCorrect": true
+      }
+    ]
+  }
+]

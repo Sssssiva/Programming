@@ -1,0 +1,317 @@
+  [
+    {
+      "question": "Что из этого не форма государственного устройства?",
+      "answers": [
+        {
+          "text": "унитарное государство",
+          "isCorrect": false
+        },
+        {
+          "text": "монархия",
+          "isCorrect": true
+        },
+        {
+          "text": "федерация",
+          "isCorrect": false
+        },
+        {
+          "text": "Конфедерация",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Кто из жён декабристов первой отправилась в Сибирь вслед за мужем?",
+      "answers": [
+        {
+          "text": "Екатерина Трубецкая",
+          "isCorrect": true
+        },
+        {
+          "text": "Мария Волконская",
+          "isCorrect": false
+        },
+        {
+          "text": "Александра Муравьёва",
+          "isCorrect": false
+        },
+        {
+          "text": "Елизавета Нарышкина",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "У кого из этих крупных хищников обмен веществ происходит гораздо медленнее, чем у остальных?",
+      "answers": [
+        {
+          "text": "белый медведь",
+          "isCorrect": false
+        },
+        {
+          "text": "амурский тигр",
+          "isCorrect": false
+        },
+        {
+          "text": "чёрная пантера",
+          "isCorrect": false
+        },
+        {
+          "text": "большая панда",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "В честь физика из какой страны названа единица измерения электрической ёмкости?",
+      "answers": [
+        {
+          "text": "Англия",
+          "isCorrect": true
+        },
+        {
+          "text": "Франция",
+          "isCorrect": false
+        },
+        {
+          "text": "Италия",
+          "isCorrect": false
+        },
+        {
+          "text": "Россия",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Кто был первым военным министром Российской империи?",
+      "answers": [
+        {
+          "text": "Аракчеев",
+          "isCorrect": false
+        },
+        {
+          "text": "Барклай-де-Толли",
+          "isCorrect": false
+        },
+        {
+          "text": "Коновницын",
+          "isCorrect": false
+        },
+        {
+          "text": "Вязмитинов",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Какой полуостров дал название породе собак?",
+      "answers": [
+        {
+          "text": "Лабрадор",
+          "isCorrect": true
+        },
+        {
+          "text": "Гибралтар",
+          "isCorrect": false
+        },
+        {
+          "text": "Пелопоннес",
+          "isCorrect": false
+        },
+        {
+          "text": "Юкатан",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Какие географические объекты изучают спелеологи?",
+      "answers": [
+        {
+          "text": "пещеры",
+          "isCorrect": true
+        },
+        {
+          "text": "озера",
+          "isCorrect": false
+        },
+        {
+          "text": "горы",
+          "isCorrect": false
+        },
+        {
+          "text": "пустыни",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Что с 2013 года находится на крыше собора Парижской Богоматери?",
+      "answers": [
+        {
+          "text": "клетка с канарейками",
+          "isCorrect": false
+        },
+        {
+          "text": "ульи с пчелами",
+          "isCorrect": true
+        },
+        {
+          "text": "террариумы с улитками",
+          "isCorrect": false
+        },
+        {
+          "text": "аквариумы с рыбами",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "О каком всаднике писал Александр Сергеевич Пушкин?",
+      "answers": [
+        {
+          "text": "без головы",
+          "isCorrect": false
+        },
+        {
+          "text": "синем",
+          "isCorrect": false
+        },
+        {
+          "text": "оловянном",
+          "isCorrect": false
+        },
+        {
+          "text": "медном",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "question": "Что сделают терпение и труд в известной пословице?",
+      "answers": [
+        {
+          "text": "все перемнут",
+          "isCorrect": false
+        },
+        {
+          "text": "все перетрут",
+          "isCorrect": true
+        },
+        {
+          "text": "все перегнут",
+          "isCorrect": false
+        },
+        {
+          "text": "все переждут",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Как называют погоду, когда температура опускается гораздо ниже нуля?",
+      "answers": [
+        {
+          "text": "крысиный мороз",
+          "isCorrect": false
+        },
+        {
+          "text": "собачий холод",
+          "isCorrect": true
+        },
+        {
+          "text": "медвежья стужа",
+          "isCorrect": false
+        },
+        {
+          "text": "заячий колотун",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Что отсутствует у классического органа?",
+      "answers": [
+        {
+          "text": "трубы",
+          "isCorrect": false
+        },
+        {
+          "text": "клавиши",
+          "isCorrect": false
+        },
+        {
+          "text": "струны",
+          "isCorrect": true
+        },
+        {
+          "text": "педали",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Одним из направлений какой религиозной философии является учение Дзен?",
+      "answers": [
+        {
+          "text": "Даосизм",
+          "isCorrect": false
+        },
+        {
+          "text": "Буддизм",
+          "isCorrect": true
+        },
+        {
+          "text": "Иудаизм",
+          "isCorrect": false
+        },
+        {
+          "text": "Индуизм",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Какое произведение Пушкин писал от лица женщины?",
+      "answers": [
+        {
+          "text": "«Рославлев»",
+          "isCorrect": true
+        },
+        {
+          "text": "«Барышня-крестьянка»",
+          "isCorrect": false
+        },
+        {
+          "text": "«Метель»",
+          "isCorrect": false
+        },
+        {
+          "text": "«Путешествие в Арзрум»",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "question": "Что народная мудрость советует отдать врагу?",
+      "answers": [
+        {
+          "text": "завтрак",
+          "isCorrect": false
+        },
+        {
+          "text": "обед",
+          "isCorrect": false
+        },
+        {
+          "text": "полдник",
+          "isCorrect": false
+        },
+        {
+          "text": "ужин",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]

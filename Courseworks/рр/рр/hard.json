@@ -1,0 +1,317 @@
+[
+  {
+    "question": "В какой из этих столиц бывших союзных республик раньше появилось метро",
+    "answers": [
+      {
+        "text": "Минск",
+        "isCorrect": false
+      },
+      {
+        "text": "Тбилиси",
+        "isCorrect": true
+      },
+      {
+        "text": "Ереван",
+        "isCorrect": false
+      },
+      {
+        "text": "Баку",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Какой роман Фенимор Купер написал на спор с женой?",
+    "answers": [
+      {
+        "text": "«Зверобой»",
+        "isCorrect": false
+      },
+      {
+        "text": "«Предосторожность»",
+        "isCorrect": true
+      },
+      {
+        "text": "«Последний из могикан»",
+        "isCorrect": false
+      },
+      {
+        "text": "«Пионеры»",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Какое имя не принимал ни один папа римский?",
+    "answers": [
+      {
+        "text": "Валентин",
+        "isCorrect": false
+      },
+      {
+        "text": "Евгений",
+        "isCorrect": false
+      },
+      {
+        "text": "Виктор",
+        "isCorrect": false
+      },
+      {
+        "text": "Георгий",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "В каком немецком городе родилась будущая императрица России Екатерина II?",
+    "answers": [
+      {
+        "text": "Штеттин",
+        "isCorrect": true
+      },
+      {
+        "text": "Цербст",
+        "isCorrect": false
+      },
+      {
+        "text": "Висбаден",
+        "isCorrect": false
+      },
+      {
+        "text": "Дармштадт",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Какой вид кавалерии предназначался для боевых действий как в конном, так и в пешем строю?",
+    "answers": [
+      {
+        "text": "Кирасиры",
+        "isCorrect": false
+      },
+      {
+        "text": "Уланы",
+        "isCorrect": false
+      },
+      {
+        "text": "Гусары",
+        "isCorrect": false
+      },
+      {
+        "text": "Драгуны",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Сколько морей омывают Балканский полуостров?",
+    "answers": [
+      {
+        "text": "3",
+        "isCorrect": false
+      },
+      {
+        "text": "4",
+        "isCorrect": false
+      },
+      {
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "text": "6",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Кто 1-м получил Нобелевскую премию по литературе?",
+    "answers": [
+      {
+        "text": "Поэт",
+        "isCorrect": true
+      },
+      {
+        "text": "Романист",
+        "isCorrect": false
+      },
+      {
+        "text": "Драматург",
+        "isCorrect": false
+      },
+      {
+        "text": "Эссеист",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько раз в сутки подзаводят куранты Спасской башни Кремля?",
+    "answers": [
+      {
+        "text": "Один",
+        "isCorrect": false
+      },
+      {
+        "text": "Два",
+        "isCorrect": true
+      },
+      {
+        "text": "Три",
+        "isCorrect": false
+      },
+      {
+        "text": "Четыре",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Какое слово не входило в лозунг Великой французской революции?",
+    "answers": [
+      {
+        "text": "свобода",
+        "isCorrect": false
+      },
+      {
+        "text": "равенство",
+        "isCorrect": false
+      },
+      {
+        "text": "братство",
+        "isCorrect": false
+      },
+      {
+        "text": "беспредел",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "Кто конструировал вертолеты, а не только самолеты?",
+    "answers": [
+      {
+        "text": "Артем Микоян",
+        "isCorrect": false
+      },
+      {
+        "text": "Николай Камов",
+        "isCorrect": true
+      },
+      {
+        "text": "Сергей Ильюшин",
+        "isCorrect": false
+      },
+      {
+        "text": "Александр Яковлев",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Какая змея не ядовита?",
+    "answers": [
+      {
+        "text": "тайпан",
+        "isCorrect": false
+      },
+      {
+        "text": "жёлтобрюхий полоз",
+        "isCorrect": true
+      },
+      {
+        "text": "чёрная мамба",
+        "isCorrect": false
+      },
+      {
+        "text": "песчаная эфа",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "В каком городе происходит действие пушкинского «Каменного гостя»?",
+    "answers": [
+      {
+        "text": "Севилья",
+        "isCorrect": false
+      },
+      {
+        "text": "Валенсия",
+        "isCorrect": false
+      },
+      {
+        "text": "Мадрид",
+        "isCorrect": true
+      },
+      {
+        "text": "Толедо",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Что открыл Александр Вольта в поисках «горючего воздуха»?",
+    "answers": [
+      {
+        "text": "кислород",
+        "isCorrect": false
+      },
+      {
+        "text": "метан",
+        "isCorrect": true
+      },
+      {
+        "text": "углерод",
+        "isCorrect": false
+      },
+      {
+        "text": "озон",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Что 16 февраля 2017 года начали сдавать тысячи японцев, желающих посодействовать Олимпиаде в Токио?",
+    "answers": [
+      {
+        "text": "«старые телефоны»",
+        "isCorrect": true
+      },
+      {
+        "text": "донорскую кровь",
+        "isCorrect": false
+      },
+      {
+        "text": "экзамены по вождению",
+        "isCorrect": false
+      },
+      {
+        "text": "личные квартиры",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "Сколько раз в сутки подзаводят куранты Спасской башни Кремля?",
+    "answers": [
+      {
+        "text": "Один",
+        "isCorrect": false
+      },
+      {
+        "text": "Два",
+        "isCorrect": true
+      },
+      {
+        "text": "Три",
+        "isCorrect": false
+      },
+      {
+        "text": "Четыре",
+        "isCorrect": false
+      }
+    ]
+  }
+]
